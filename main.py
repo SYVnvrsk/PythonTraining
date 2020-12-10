@@ -126,6 +126,27 @@ def tasks(chapter, task):
                 y = input("Введите y: ")
                 print(x, y)
                 print("5", y)
+            else:
+                print("There is no subtask with such number in this chapter.")
+        else:
+            """Тестовый вывод"""
+            print("There is no task with such number in this chapter.")
+    if chapter == 2:
+        if task == 1:
+            """Составить программу:
+            1) вычисления значения функции y=17x^2-6x+13 при любом значении x
+            2) вычисления значения функции y=3a^2+5a-21 при любом значении a"""
+            choice = input("Введите номер подзадачи: ")
+            if choice == "1":
+                x = float(input("Введите x: "))
+                y = 17 * (x ** 2) - 6 * x + 13
+                print("y =", y)
+            elif choice == "2":
+                a = float(input("Введите a: "))
+                y = 3 * (a ** 2) + 5 * a - 21
+                print("y =", y)
+            else:
+                print("There is no subtask with such number in this chapter.")
         else:
             """Тестовый вывод"""
             print("There is no task with such number in this chapter.")
