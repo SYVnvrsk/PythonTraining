@@ -90,6 +90,44 @@ def tasks(task):
         number4 = input("Введите число №4: ")
         print()
         print(number1, number2, number3, number4, sep=" ")
+    elif task == 16:
+        """Составить программу вывода на экран следующей информации:
+            1) 5 10        2) 100 t        3) x 25
+               7 см           1949 v          x y
+        """
+        choice = input("Введите цифру подзадания (1, 2, 3): ")
+        if choice == "1":
+            print("5 10")
+            print("7 см")
+        elif choice == "2":
+            t = input("Введите t: ")
+            v = input("Введите v: ")
+            print("100", t)
+            print("1949", v)
+        elif choice == "3":
+            x = input("Введите x: ")
+            y = input("Введите y: ")
+            print(x, "25")
+            print(x, y)
+    elif task == 17:
+        """Составить программу вывода на экран следующей информации:
+            1) 2 кг         2) a 1         3) x y
+               13 17           19 b           5 y
+        """
+        choice = input("Введите цифру подзадания (1, 2, 3): ")
+        if choice == "1":
+            print("2 кг")
+            print("13 17")
+        elif choice == "2":
+            a = input("Введите a: ")
+            b = input("Введите b: ")
+            print(a, "1")
+            print("19", b)
+        elif choice == "3":
+            x = input("Введите x: ")
+            y = input("Введите y: ")
+            print(x, y)
+            print("5", y)
 
 
 if __name__ == '__main__':
