@@ -1,3 +1,6 @@
+import math
+
+
 def tasks(chapter, task):
     """Выполнение задачи по номеру главы и номеру задачи"""
     if chapter == 1:
@@ -147,6 +150,11 @@ def tasks(chapter, task):
                 print("y =", y)
             else:
                 print("There is no subtask with such number in this chapter.")
+        elif task == 2:
+            """Составить программу вычисления значения функции (a^2+10)/(sqrt(a^2+1)) при любом значении a"""
+            a = float(input("Введите а: "))
+            result = (a ** 2 + 10)/(math.sqrt(a ** 2 + 1))
+            print("Ответ:", result)
         else:
             """Тестовый вывод"""
             print("There is no task with such number in this chapter.")
