@@ -155,6 +155,21 @@ def tasks(chapter, task):
             a = float(input("Введите а: "))
             result = (a ** 2 + 10)/(math.sqrt(a ** 2 + 1))
             print("Ответ:", result)
+        elif task == 3:
+            """Составить программу:
+               1) вычисления значения функции sqrt((2a+sin|3a|)/(3,56)) при любом значении а
+               2) вычисления значения функции sin((3,2+sqrt(1+x))/(|5x|)) при любом значении х"""
+            choice = input("Введите номер подзадачи: ")
+            if choice == "1":
+                a = float(input("Введите а: "))
+                result = math.sqrt((2 * a + math.sin(math.fabs(3 * a)))/3.56)
+                print("Ответ:", result)
+            elif choice == "2":
+                x = float(input("Введите x: "))
+                result = math.sin((3.2 + math.sqrt(1 + x))/math.fabs(5 * x))
+                print("Ответ:", result)
+            else:
+                print("There is no subtask with such number in this chapter.")
         else:
             """Тестовый вывод"""
             print("There is no task with such number in this chapter.")
