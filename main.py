@@ -170,6 +170,14 @@ def tasks(chapter, task):
                 print("Ответ:", result)
             else:
                 print("There is no subtask with such number in this chapter.")
+        elif task == 4:
+            """Дана сторона квадрата. Найти его периметр."""
+            a = float(input("Введите сторону квадрата: "))
+            print("P =", a * 4)
+        elif task == 5:
+            """Дана радиус окружности. Найти её диаметр."""
+            r = float(input("Введите радиус окружности: "))
+            print("d =", r / 2)
         else:
             """Тестовый вывод"""
             print("There is no task with such number in this chapter.")
