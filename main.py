@@ -292,6 +292,51 @@ def tasks(chapter, task):
             y = (math.fabs(a) + 2 * math.sin(b)) / (5.5 * a)
             print("x =", x)
             print("y =", y)
+        elif task == 20:
+            """Составить программу вычисления значений функций a, b и c при любых значениях e, f, g и h."""
+            e = float(input("Введите e: "))
+            f = float(input("Введите f: "))
+            g = float(input("Введите g: "))
+            h = float(input("Введите h: "))
+            a = math.sqrt(math.fabs(e - 3 / f) ** 3 + g)
+            b = math.sin(e) + math.cos(h) ** 2
+            c = (33 * g) / (e * f - 3)
+            print("a =", a)
+            print("b =", b)
+            print("c =", c)
+        elif task == 21:
+            """Составить программу вычисления значений функций a, b и c при любых значениях e, f, g и h."""
+            e = float(input("Введите e: "))
+            f = float(input("Введите f: "))
+            g = float(input("Введите g: "))
+            h = float(input("Введите h: "))
+            a = (e + (f / 2)) / 3
+            b = math.fabs(h ** 2 - g)
+            c = math.sqrt((g - h) ** 2 - 3 * math.sin(e))
+            print("a =", a)
+            print("b =", b)
+            print("c =", c)
+        elif task == 22:
+            """Даны два числа. Найти среднее арифметическое и среднее геометрическое их модулей."""
+            a = float(input("Введите число 1: "))
+            b = float(input("Введите число 2: "))
+            print("Среднее арифметическое =", (math.fabs(a) + math.fabs(b)) / 2)
+            print("Среднее геометрическое =", math.sqrt(math.fabs(a) * math.fabs(b)))
+        elif task == 23:
+            """Даны стороны прямоугольника. Найти его периметр и длину диагонали."""
+            a = float(input("Введите сторону 1: "))
+            b = float(input("Введите сторону 2: "))
+            p = 2 * (a + b)
+            c = math.sqrt(a ** 2 + b ** 2)
+            print("p =", p)
+            print("c =", c)
+        elif task == 24:
+            a = float(input("Введите число 1: "))
+            b = float(input("Введите число 2: "))
+            print("Сумма =", a + b)
+            print("Разность =", a - b)
+            print("Произведение =", a * b)
+            print("Частное =", a / b)
         else:
             """Тестовый вывод"""
             print("There is no task with such number in this chapter.")
